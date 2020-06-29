@@ -3,9 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Practice</title>
+    <style>
+        .first_div h1:hover{
+            background-color: aqua;
+            font-size: 40px;
+            color: bisque;
+        }
+
+        .special:hover{
+            color: blue;
+            background-color: crimson;
+            font-size: 30px;
+        }
+        input:focus{
+            font-size: 30px;
+            color: darkgoldenrod;
+            background-color: skyblue;
+        }
+        li:last-child{
+            color: red;
+        }
+        li:nth-child(2n+1){
+            color: springgreen;
+        }
+        a{
+            font-size: 30px;
+        }
+
+        a:visited{
+            color: salmon;
+        }
+        .fourth_div p{
+            font-size: 2rem;
+
+        }
+        p::after{
+            content: " Yo";
+            color: darkgreen;
+            font-size: 2rem;
+        }
+        body {
+            counter-reset: section;
+        }
+
+        p::before {
+            counter-increment: section;
+            content: " " counter(section) ": ";
+        }
+
+    </style>
 </head>
 <body>
+    <div class="first_div">
+
     <h1>hello dear.</h1>
+    <h1>I am Pro developer.</h1>
+    <h1>Hey. What's up?</h1>
+    <h1 class="special">Come On buddy.</h1>
+
+</div>
+
+<div class="second_div">
+    <input type="text"><br><br>
+    <input type="text"><br>
+
+    <ul>
+        <li>karim</li>
+        <li>rahim</li>
+        <li>jamal</li>
+        <li>fahim</li>
+        <li>mofiz</li>
+        <li>kamal</li>
+    </ul>
+
+    <a href="https://www.youtube.com/">Click please</a><br>
+    <a href="https://www.facebook.com/">Click please</a><br>
+    <a href="https://www.twitter.com">Pull</a>
+
+
+</div>
+<div class="fourth_div">
+        <p>karim</p>
+        <p>rahim</p>
+        <p>jamal</p>
+        <p>fahim</p>
+        <p>mofiz</p>
+        <p>kamal</p>
+</div>
 </body>
 </html>
